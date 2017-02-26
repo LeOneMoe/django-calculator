@@ -13,6 +13,7 @@ input {
   background: transparent;
   font-size: 230%;
   border: double;
+  text-align: right;
 }
 
 input:focus {

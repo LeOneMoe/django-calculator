@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Калькулятор</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <script type="text/javascript" src='/static/jquery-3.1.1.min.js'></script>
 </head>
 <body>
-<form>
+<form id="main-form">
   <fieldset>
     <legend>Калькулятор</legend>
     <div class="container">
       <div class="input-wrapper">
-        <input type="text" name="name">
+        <input type="text" name="data" id="input-field" value="0">
       </div>
       <br>
       <button class="btn btn-symbols">(</button>
@@ -42,5 +43,6 @@
     </div>
   </fieldset>
 </form>
+<script type="text/javascript" src="/static/script.js"></script>
 </body>
 </html>

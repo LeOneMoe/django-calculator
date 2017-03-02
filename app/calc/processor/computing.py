@@ -1,6 +1,22 @@
 
 def brackets_balance(expression):
-    pass
+    
+	balance = 0
+
+	for symbol in balance:
+		if symbol == '(':
+			balance += 1
+		elif symbol == ')':
+			balance -= 1
+
+	if balance == 0:
+		is_ok = True
+		answer = 'Баланс скобок соблюдён'
+	else:
+		is_ok = False
+		answer = 'Нет баланса скобок'
+
+	return is_ok, answer
 
 
 def compute(expression):

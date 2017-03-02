@@ -13,5 +13,12 @@ def compute(expression):
     except SyntaxError:
         is_ok = False
         answer = 'Ошибка синтаксиса'
+    except ZeroDivisionError:
+    	is_ok = False
+    	answer = 'Деление на ноль недопустимо'
+    except TypeError as e:
+    	is_ok = False
+    	answer = str(e)
+
 
     return is_ok, answer
